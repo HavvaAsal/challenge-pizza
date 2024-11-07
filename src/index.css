@@ -17,11 +17,9 @@
   display: flex;
   flex-direction: column;
   margin: 20px 0;
-  }
+ }
 
 .header-container {
-  max-width: 530px;
-  margin: 0 auto;
   color:white;
 }
 
@@ -29,26 +27,11 @@
   text-align: center;
 }
 
-.square-selection {
-  max-width: 530px;
-  margin: 0 auto;
-
-}
-
 header {
   background-color: #CE2829;
   padding: 1.5rem;
 }
 
-.main-container {
-  max-width: 530px;
-  margin: 0 auto;
-}
-
-.food-description {
-  max-width: 530px;
-  margin: 0 auto;
-}
 .main {
   margin: 0 auto;
   max-width: 530px; 
