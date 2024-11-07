@@ -1,13 +1,25 @@
 import { useState } from 'react'
 import { Form, FormGroup, Label, Input, ButtonGroup, Button } from 'reactstrap'
+import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import reactLogo from './assets/react.svg'
 import workintech from '/workintech.svg'
 import './App.css'
 
+
+const extras = [
+  "Pepperoni", "Sosis", "Kanada Jambonu", "Tavuk Izgara", "Soğan", "Domates", "Mısır", "Sucuk", "Jalepeno", "Sarımsak", "Biber", "Ananas", "Kabak"];
+const sizes = ["küçük", "orta", "büyük"];
+const hamur = ["ince", "orta", "kalın"]; 
+const initialForm = {
+  "boyut":"-1",
+  "hamur":"-1",
+  "malzeme":"[]",
+}
+
+
 function App() {
-  const extras = [
-    "Pepperoni", "Sosis", "Kanada Jambonu", "Tavuk Izgara", "Soğan", "Domates", "Mısır", "Sucuk", "Jalepeno", "Sarımsak", "Biber", "Ananas", "Kabak"];
+
 
   const [squares, setSquares] = useState([]);
 
@@ -26,7 +38,7 @@ function App() {
           <div className='header-container'>
             <h1>Teknolojik Yemekler</h1>
             <div className="main-container">
-              <p> Anasayfa - Seçenekler - <strong>Sipariş Oluştur</strong></p>
+              <p> Anasayfa - <strong>Sipariş Oluştur</strong></p>
             </div>
           </div>
         </header>
@@ -104,13 +116,13 @@ function App() {
           <hr></hr>
 
           <ButtonGroup>
-            <Button color="yellow">
+            <Button className="yellow">
               -
             </Button>
-            <Button color="white">
+            <Button className="white">
               1
             </Button>
-            <Button color="yellow">
+            <Button className="yellow">
               +
             </Button>
           </ButtonGroup>
